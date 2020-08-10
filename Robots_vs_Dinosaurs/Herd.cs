@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotsVSDinosaurs
+namespace Robots_vs_Dinosaurs
 {
     class Herd
     {
@@ -27,9 +26,5 @@ namespace RobotsVSDinosaurs
         {
 
         }
-        
-        
     }
-        
-            
 }

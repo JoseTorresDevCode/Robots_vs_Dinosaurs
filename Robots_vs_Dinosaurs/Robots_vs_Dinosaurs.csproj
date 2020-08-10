@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{33EFF7A4-37B8-4364-8900-A043C1787C39}</ProjectGuid>
+    <ProjectGuid>{F5F547F7-AF53-4F6C-B570-962C2CE31E5A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RobotsVSMonters</RootNamespace>
-    <AssemblyName>RobotsVSMonters</AssemblyName>
+    <RootNamespace>Robots_vs_Dinosaurs</RootNamespace>
+    <AssemblyName>Robots_vs_Dinosaurs</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
