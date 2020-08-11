@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,22 +12,21 @@ namespace Robots_vs_Dinosaurs
         // Member Variables 
         public string robotName;
         public bool isAlive; //Health
-        public string powerLevel;
-        public string robotWeaponType;
-        public int robotWeaponAttackPower;
+        public int powerLevel;
+        public Weapon weapon;
 
 
         // Constructor
-        public Robot(string robotName, string robotWeaponType, int robotWeaponAttackPower, string powerLevel, bool isAlive)
+        public Robot(string robotName, string robotWeaponType, int robotWeaponAttackPower, int powerLevel, bool isAlive)
         {
-       
+            this.weapon = new Weapon(robotWeaponType, robotWeaponAttackPower);
             this.robotName = robotName;
             this.powerLevel = powerLevel;
-            this.robotWeaponAttackPower = robotWeaponAttackPower;
             this.isAlive = isAlive;
-            this.robotWeaponType = robotWeaponType;
         }
 
         // Member Methods
+
+       
     }
 }

@@ -9,24 +9,19 @@ namespace Robots_vs_Dinosaurs
     class Herd
     {
         // Member Variables 
-
-
-        public List<Dinosaur> dinosaur = new List<Dinosaur>();
-        public Dinosaur tRex;
-        public Dinosaur deiny;
-        public Dinosaur allo;
-
+        public List<Dinosaur> dinosaurs = new List<Dinosaur>();
+       
         // Constructor
 
         public Herd()
         {
-            tRex = new Dinosaur("Tyrannosaurus", true, 100, 12);
-            deiny = new Dinosaur("Deinonychus", true, 100, 8);
-            allo = new Dinosaur("Allosaurus", true, 100, 7);
+           Dinosaur tRex = new Dinosaur("Tyrannosaurus", true, 100, 12);
+           Dinosaur deiny = new Dinosaur("Deinonychus", true, 100, 8);
+           Dinosaur allo= new Dinosaur("Allosaurus", true, 100, 7);
 
-            dinosaur.Add(tRex);
-            dinosaur.Add(deiny);
-            dinosaur.Add(allo);
+            dinosaurs.Add(tRex);
+            dinosaurs.Add(deiny);
+            dinosaurs.Add(allo);
             
 
 

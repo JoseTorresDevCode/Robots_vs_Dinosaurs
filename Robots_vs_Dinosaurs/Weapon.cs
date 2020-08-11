@@ -9,14 +9,17 @@ namespace Robots_vs_Dinosaurs
     class Weapon
     {
         // Member Variables 
-        public string lightSaber;
-        public string morningStar;
-        public string battleAxe;
-        public int lightSaberAttackPower;
-        public int morningStarAttackPower;
-        public int battleAxeAttackPower;
+        public string weaponType;
+        public int attackPower;
+
 
         // Constructor
+        public Weapon(string weaponType,int attackPower)
+        {
+            this.weaponType = weaponType;
+            this.attackPower = attackPower;
+        }
+
 
         // Member Methods
     }
