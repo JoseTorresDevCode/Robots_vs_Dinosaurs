@@ -9,26 +9,17 @@ namespace Robots_vs_Dinosaurs
     class Dinosaur
     {
         // Member Variables 
-        public bool isAMeatEater; //type
+        public string type; //type
         public bool isAlive;      //Health
         public double dinosaurEnergyLevel;
         public double dinosaurAttackPower;
+        public Dinosaur(string type, bool isAlive, double dinosaurEnergyLevel, double dinosaurAttackPower)
         // Constructor
-
-        public Dinosaur(double dinosaurEnergyLevel, double dinosaurAttackPower, bool isAlive, bool isAMeatEater)
         {
-
-            isAlive = true;
-            dinosaurEnergyLevel = 100;
-            isAMeatEater = true;
-            dinosaurAttackPower = 4;
             this.isAlive = isAlive;
             this.dinosaurEnergyLevel = dinosaurEnergyLevel;
             this.dinosaurAttackPower = dinosaurAttackPower;
-            this.isAMeatEater = isAMeatEater;
-
-
-
+            this.type = type;
         }
 
 

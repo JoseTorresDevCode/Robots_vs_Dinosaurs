@@ -11,21 +11,17 @@ namespace Robots_vs_Dinosaurs
         // Member Variables 
         public string robotName;
         public bool isAlive; //Health
-        public bool hasPowerLeft;
+        public string powerLevel;
         public string robotWeaponType;
         public int robotWeaponAttackPower;
 
 
         // Constructor
-        public Robot(string robotName, string robotWeaponType, int robotWeaponAttackPower, bool hasPowerLeft, bool isAlive)
+        public Robot(string robotName, string robotWeaponType, int robotWeaponAttackPower, string powerLevel, bool isAlive)
         {
-            isAlive = true;
-            robotWeaponType = "";
-            hasPowerLeft = true;
-            robotWeaponAttackPower = 4;
-            robotName = "";
+       
             this.robotName = robotName;
-            this.hasPowerLeft = hasPowerLeft;
+            this.powerLevel = powerLevel;
             this.robotWeaponAttackPower = robotWeaponAttackPower;
             this.isAlive = isAlive;
             this.robotWeaponType = robotWeaponType;
