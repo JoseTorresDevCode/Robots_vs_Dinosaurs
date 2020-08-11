@@ -9,15 +9,17 @@ namespace Robots_vs_Dinosaurs
     class Herd
     {
         // Member Variables 
-        List<Dinosaur> dinosaur;
+        
 
 
         // Constructor
 
         public Herd()
         {
-            dinosaur = new List<Dinosaur>();
-
+           
+            var dinosaur = new List<string>();
+            dinosaur.Add("T-Rex");
+            dinosaur.Add("Velociraptor");
         }
 
         // Member Methods
