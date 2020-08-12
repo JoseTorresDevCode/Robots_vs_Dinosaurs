@@ -9,7 +9,7 @@ namespace Robots_vs_Dinosaurs
 {
     class Robot
     {
-        private static int robotWeaponAttackPower;
+        
 
         // Member Variables 
         public string robotName;
@@ -17,6 +17,7 @@ namespace Robots_vs_Dinosaurs
         public int powerLevel;
         public Weapon weapon;
         public int robotHealth;
+        private static int robotWeaponAttackPower;
 
         // Constructor
         public Robot(string robotName, string robotWeaponType, int robotWeaponAttackPower, int robotHealth, int powerLevel, bool isAlive)
