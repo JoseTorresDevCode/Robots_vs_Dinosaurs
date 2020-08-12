@@ -32,6 +32,14 @@ namespace Robots_vs_Dinosaurs
         {
             attackRobot.robotHealth = attackRobot.robotHealth - dinosaurAttackPower;
             Console.WriteLine($"{type} strikes: {attackRobot.robotName} Damage: {dinosaurAttackPower}");
+            //need if statements for isAlive
+            if(attackRobot.robotHealth >= 0)
+            {
+                isAlive = false;
+                Console.WriteLine($"{attackRobot.robotName} has died");
+            }
         }
+
+
     }
 }

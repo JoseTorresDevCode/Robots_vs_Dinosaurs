@@ -25,6 +25,7 @@ namespace Robots_vs_Dinosaurs
             this.robotName = robotName;
             this.powerLevel = powerLevel;
             this.isAlive = isAlive;
+            this.robotHealth = robotHealth;
         }
 
         // Member Methods
@@ -34,7 +35,14 @@ namespace Robots_vs_Dinosaurs
             //create attack - pulling health from dinosaur class
             attackDinosaur.dinosaurHealth = attackDinosaur.dinosaurHealth - Robot.robotWeaponAttackPower;
             Console.WriteLine($"{robotName} strikes: {attackDinosaur.type} Damage: {robotWeaponAttackPower}");
+            //need if statements for isAlive
+            if(attackDinosaur.dinosaurHealth <= 0)
+            {
+                isAlive = false;
+                Console.WriteLine($"{attackDinosaur.type} has died");
+            }
         }
-            
+
+
     }
 }
