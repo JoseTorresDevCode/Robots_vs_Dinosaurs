@@ -10,12 +10,15 @@ namespace Robots_vs_Dinosaurs
     {
         // Member Variables 
         public string type; //type
-        public bool isAlive;      //Health
-        public double dinosaurEnergyLevel;
-        public double dinosaurAttackPower;
-        public Dinosaur(string type, bool isAlive, double dinosaurEnergyLevel, double dinosaurAttackPower)
+        public int dinosaurHealth; //Health
+        public bool isAlive;      
+        public int dinosaurEnergyLevel;
+        public int dinosaurAttackPower;
+        public Dinosaur(string type, int dinosaurHealth, bool isAlive, int dinosaurEnergyLevel, int dinosaurAttackPower)
         // Constructor
         {
+            
+            this.dinosaurHealth = dinosaurHealth;
             this.isAlive = isAlive;
             this.dinosaurEnergyLevel = dinosaurEnergyLevel;
             this.dinosaurAttackPower = dinosaurAttackPower;
@@ -25,5 +28,10 @@ namespace Robots_vs_Dinosaurs
 
         // Member Methods
 
+        public void AttackRobot(Robot attackRobot)
+        {
+            attackRobot.robotHealth = attackRobot.robotHealth - dinosaurAttackPower;
+            Console.WriteLine($"{type} strikes: {attackRobot.robotName} Damage: {dinosaurAttackPower}");
+        }
     }
 }

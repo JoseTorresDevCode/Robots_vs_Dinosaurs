@@ -18,6 +18,7 @@ namespace Robots_vs_Dinosaurs
         {
             this.weaponType = weaponType;
             this.attackPower = attackPower;
+            
         }
 
 
